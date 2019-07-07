@@ -21,7 +21,6 @@ const AboutImg = styled.div`
     background-size:contain;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/palms.png); 
-    
 `
 
 export class About extends React.Component {
