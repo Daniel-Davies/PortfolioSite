@@ -16,7 +16,7 @@ const SubText = styled.span`
 
 const AboutImg = styled.div`
     height: 100vh;
-    width: 100vw;
+    width: 99.1vw;
     background-repeat: no-repeat;
     background-size:contain;
     background-size: cover;
@@ -33,7 +33,7 @@ export class About extends React.Component {
                         <div className="col-6 text-center">
                             <LeadingGreeting className="text-white ">Hello! I'm Daniel, a Masters' student at the University of Bristol.</LeadingGreeting><br />
                             <SubText className="text-white">Use this website to find out more about my professional interests, experience, and projects!</SubText><br />
-                            <div className="row col-12 d-flex justify-content-center mt-5">
+                            <div className="col-12 d-flex justify-content-center mt-5">
                                 <button className="btn btn-lg text-white border border-white px-4 mx-2" style={{ background: "none" }}>Projects</button>
                                 <button className="btn btn-lg text-white border border-white px-4 mx-2" style={{ background: "none" }}>Contact</button>
                             </div>

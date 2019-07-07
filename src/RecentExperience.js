@@ -7,7 +7,7 @@ class RecentExperience extends React.Component {
 
     render(){
         return (
-            <div className="row col-12 justify-content-center d-flex">
+            <div className="col-12 justify-content-center d-flex">
                 <div className="col-4">
                     <Card Type={"Job"} Image={"./images/lynch.jpg"} Desc={"Merrill Lynch"} Technologies={['JS', 'Something', 'ASP.NET ']}></Card>
                 </div> 

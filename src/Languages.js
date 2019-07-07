@@ -37,7 +37,7 @@ class Languages extends React.Component{
                             <Skill name={"Python"}></Skill>
                         </div>
                     </div>
-                    <SkillHeader>And I can tell you my opionion on these platforms...</SkillHeader>
+                    <SkillHeader>And I can tell you my opinion on these platforms...</SkillHeader>
                     <div className="d-flex justify-content-center col-12">
                         <div className="col-8 d-flex justify-content-between">
                             <Skill name={"Java"}></Skill>
