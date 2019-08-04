@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
+import Grid from '@material-ui/core/Grid';
 import IntroText from './IntroText';
-import Skill from './Skill'
 import RecentExperience from './RecentExperience';
 import Languages from './Languages';
+import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
+import {Link} from 'react-router-dom';
 
 const Section = styled.div`
     padding-top: 10vh;
@@ -12,7 +15,7 @@ const Section = styled.div`
 
 const CodeImg = styled.div`
     height: auto;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size:contain;
     background-size: cover;
@@ -23,23 +26,23 @@ const CodeImg = styled.div`
 
 const QuickIntro = () => {
     return (
-        <div className="d-flex align-items-center flex-column col-12 px-0">
+        <Grid alignItems="center" direction="column" item container xs={12} id={"scrollDown"}>
             <Section style={{"backgroundColor": "#343a40"}}>
                 <IntroText/>
             </Section>
-            <div className="col-10 d-flex align-items-center flex-column px-0 mx-0" style={{paddingTop: "5vh", paddingBottom: "5vh"}}>
-                <div className="col-8 d-flex justify-content-center mb-4 mx-0 px-0">
-                    <p className="h4 text-muted">3 Most Recent Professional Experiences</p>
-                </div>
+            <Grid alignItems="center" direction="column" item container xs={10} style={{paddingTop: "5vh", paddingBottom: "5vh"}}>
+                <Grid item container xs={8} justify="center">
+                    <Typography variant="h5" align="center" style={{opacity: 0.7}}>3 Most Recent Professional Projects</Typography>
+                </Grid>
                 <RecentExperience/>
-                <div className="d-flex justify-content-center col-12" style={{paddingTop: "5vh", paddingBottom: "3vh"}}>
-                    <button className="btn btn-outline-dark btn-lg border border-dark">See More!</button>
-                </div>
-            </div>
+                <Grid item container xs={12} justify="center" style={{paddingTop: "5vh", paddingBottom: "3vh"}}>
+                    <Button variant="outlined" size="large"  to={'/projects'} component={Link}>See More!</Button>
+                </Grid>
+            </Grid>
             <CodeImg className="d-flex align-items-center flex-column col-12 px-0">
                 <Languages/>        
             </CodeImg>
-        </div>
+        </Grid>
             
     );
 } 

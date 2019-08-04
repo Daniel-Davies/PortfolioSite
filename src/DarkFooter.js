@@ -10,12 +10,12 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   darker:{
-    backgroundColor: "#343a40",
-    color: "white"
+    backgroundColor: "white",
+    color: "black"
   }
 });
 
-export default function Footer() {
+export default function DarkFooter() {
   const classes = useStyles();
 
   return (
