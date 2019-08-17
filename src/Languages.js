@@ -16,7 +16,7 @@ class Languages extends React.Component{
     render(){
         const {classes}=this.props;
         return (
-            <Grid alignItems="center" direction="column" xs={12} item container>
+            <Grid alignItems="center" direction="column" xs={12} item container data-aos='fade-up'>
                 <Grid alignItems="center" direction="column" xs={8} item container>
                     <Typography variant="h3" className={classes.root}>Technologies</Typography>
                 </Grid>

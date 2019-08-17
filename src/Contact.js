@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import Fade from '@material-ui/core/Fade';
 import { withStyles } from '@material-ui/core/styles';
 import { ReCaptcha } from 'react-recaptcha-google';
 import {Link} from 'react-router-dom';
@@ -149,19 +150,17 @@ class Contact extends React.Component {
     handleSubmit(e){
         if(this.validateForm()){
             this.setState({loadingResp: true})
-            makePostReqToServer(this.state, "https://thawing-savannah-70212.herokuapp.com/email").then(
+            makePostReqToServer(this.state, "http://thawing-savannah-70212.herokuapp.com/email").then(
                 serverResponse =>{ 
                     const response = JSON.parse(serverResponse)
                     if(response.success){
                         this.setState({submittedForm: true})
                     } else{
                         this.setState({loadingResp: false})
-                        alert(response.message)
                     }
                 }, 
                 reject => {
                     this.setState({loadingResp: false})
-                    alert("Hmmm it looks like I can't send emails at the moment. Please try again later.")
                 }
             );
         }
@@ -188,7 +187,8 @@ class Contact extends React.Component {
                 <div style={{minHeight: "100vh", justifyContent: "space-between", display: "flex", flexDirection: "column"}}>
                     <div><Navbar fillColor={"none"} nowActive="Contact" /></div>
                     <div>
-                    {!this.state.submittedForm && 
+                    {!this.state.submittedForm &&
+                <Fade in={true} style={{ transitionDelay: true ? '100ms' : '0ms' }} {...(true ? { timeout: 2000 } : {})} >
                 <Grid alignItems="center" item container direction="column" justify="center" >
                     <Grid item container justify="center">
                         <Typography className={classes.multiline} variant="h3">Contact Me</Typography>
@@ -288,7 +288,7 @@ class Contact extends React.Component {
                                 />
                             </div>
                             <Grid justofy="space-between" item container xs={12}>
-                                <Grid justify="start" xs={12} lg={6} item container className={classes.bigSpace}>
+                                <Grid justify="flex-start" xs={12} lg={6} item container className={classes.bigSpace}>
                                     <ReCaptcha
                                             ref={(el) => {this.captchaDemo = el;}}
                                             size="normal"
@@ -314,6 +314,7 @@ class Contact extends React.Component {
                         </div>
                     </Grid>
                 </Grid>
+                </Fade>
             }
                 {
                     this.state.submittedForm && 

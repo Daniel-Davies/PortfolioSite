@@ -19,7 +19,7 @@ const CodeImg = styled.div`
     background-repeat: no-repeat;
     background-size:contain;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/code.png); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(./images/mycode.PNG); 
     padding-top: 5vh;
     padding-bottom: 5vh;
 `
@@ -30,7 +30,7 @@ const QuickIntro = () => {
             <Section style={{"backgroundColor": "#343a40"}}>
                 <IntroText/>
             </Section>
-            <Grid alignItems="center" direction="column" item container xs={10} style={{paddingTop: "5vh", paddingBottom: "5vh"}}>
+            <Grid alignItems="center" direction="column" item container xs={8} style={{paddingTop: "5vh", paddingBottom: "5vh"}}>
                 <Grid item container xs={8} justify="center">
                     <Typography variant="h5" align="center" style={{opacity: 0.7}}>3 Most Recent Professional Projects</Typography>
                 </Grid>

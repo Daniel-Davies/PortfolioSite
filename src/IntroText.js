@@ -4,6 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
+
 const useStyles = makeStyles(theme => ({
     right:{
         textAlign: "right",
@@ -17,9 +21,6 @@ const useStyles = makeStyles(theme => ({
     }
   }));
 
-  let theme = createMuiTheme();
-  theme = responsiveFontSizes(theme);
-
 function IntroText() {
     const classes  = useStyles()
     return (
@@ -27,13 +28,18 @@ function IntroText() {
             <Grid xs={12} item container justify="center" alignItems="center">
                 <Grid xs={8} container justify="center" item>
                     <Grid xs={6} item >
-                        <Typography  data-aos='fade-up' className={classes.right} variant="h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ans thats that.</Typography>
+                        <Typography  data-aos='fade-up' className={classes.right} variant="h4">The bigger the challenge, the bigger the learning curve...the bigger the fun!</Typography>
                     </Grid>
                     <Grid xs={6} item >
-                        <Typography  data-aos='fade-up' className={classes.left}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere tortor quis vulputate sodales. 
-                            Maecenas pulvinar eget orci ac lobortis. Donec ut lacinia turpis. Vivamus mollis nunc velit, at 
-                            iaculis nibh auctor venenatis. Quisque quis felis eget diam tincidunt porta. Donec cursus tempor odio
-                            , quis pellentesque sapien aliquet ac. In interdum ligula quis est suscipit, volutpat pharetra enim lobortis.</Typography>
+                        <Typography  data-aos='fade-up' className={classes.left}>
+                        Hi, I'm Daniel, an award winning CS student who has a passion for delivering high quality
+                        products that bring value to the people that use them.
+                        Building cool projects one little, maintable, clean building block at a time, 
+                        is the reason I fell in love with Computer Science, and the biggest
+                        source of satisfaction from everything I build. <br/><br/>
+                        I hope to one day use my skills for empowering my wider community 
+                        with Technolgy, to make the world a better place to live. 
+                        </Typography>
                     </Grid>
                 </Grid>
             </Grid>   

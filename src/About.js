@@ -29,14 +29,16 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1)
     },
     paperContainer: {
-        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./images/palms.png)",
+        backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.48),rgba(0, 0, 0, 0.48)), url(./images/landing_pi.jpg)",
         minHeight: "100vh",
         width: "auto",
         backgroundSize: "cover",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        objectFit: 'fill'
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
     },
     fab:{
         marginBottom: theme.spacing(5), 
