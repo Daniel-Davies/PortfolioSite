@@ -150,7 +150,7 @@ class Contact extends React.Component {
     handleSubmit(e){
         if(this.validateForm()){
             this.setState({loadingResp: true})
-            makePostReqToServer(this.state, "http://thawing-savannah-70212.herokuapp.com/email").then(
+            makePostReqToServer(this.state, "https://thawing-savannah-70212.herokuapp.com/email").then(
                 serverResponse =>{ 
                     const response = JSON.parse(serverResponse)
                     if(response.success){
