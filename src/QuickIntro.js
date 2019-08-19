@@ -30,8 +30,8 @@ const QuickIntro = () => {
             <Section style={{"backgroundColor": "#343a40"}}>
                 <IntroText/>
             </Section>
-            <Grid alignItems="center" direction="column" item container xs={8} style={{paddingTop: "5vh", paddingBottom: "5vh"}}>
-                <Grid item container xs={8} justify="center">
+            <Grid alignItems="center" direction="column" item container lg={8} md={10} xs={12} style={{paddingTop: "5vh", paddingBottom: "5vh"}}>
+                <Grid item container lg={8} md={10} xs={12} justify="center">
                     <Typography variant="h5" align="center" style={{opacity: 0.7}}>3 Most Recent Professional Projects</Typography>
                 </Grid>
                 <RecentExperience/>
