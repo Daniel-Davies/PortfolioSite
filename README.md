@@ -1,6 +1,6 @@
 # YouFoundDaniel.com
 
-This is the source code for my portfolio site, which you can see in action [over here](https://www.youfounddaniel.com). The objective was just to provide a quick overview of what I've done and what I'm working on right now.
+This is the source code for my portfolio site, which you can see in action [over here](https://www.youfounddaniel.com). The objective was to learn React, and in doing so, provide a quick overview of what I've done and what I'm working on right now.
 
 <img src="https://github.com/Daniel-Davies/PortfolioSite/blob/master/ezgif-4-81cb6d097f01.gif" />
 
