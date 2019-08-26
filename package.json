@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,13 +11,16 @@
     "react-recaptcha-google": "^1.1.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "webpack": "^4.29.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js --ext .jsx . --fix",
+    "pretty": "prettier --check src/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,10 +34,16 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version",
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "1.18.2"
   }
 }
