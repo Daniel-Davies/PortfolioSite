@@ -8,8 +8,6 @@ This is the source code for my portfolio site, which you can see in action [over
 
 It's built using ReactJS. That means running it locally is also very easy. Just do:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 - Ensure node is installed
 - Clone this repo
 - Go into "PortfolioSite" and hit "npm i"
