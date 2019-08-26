@@ -14,7 +14,9 @@ import KeyboardArrowDown from "@material-ui/icons/KeyboardArrowDown";
 import Chip from "@material-ui/core/Chip";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import PropTypes from 'prop-types';
 import CardFlag from "./CardFlag";
+
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -63,7 +65,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ImgMediaCard({
+function ImgMediaCard({
   Image,
   Title,
   Technologies,
@@ -179,3 +181,15 @@ export default function ImgMediaCard({
     </Card>
   );
 }
+
+ImgMediaCard.propTypes = {
+  Image: PropTypes.string,
+  Title: PropTypes.string,
+  Technologies: PropTypes.array,
+  Type: PropTypes.string,
+  Link: PropTypes.string,
+  Description: PropTypes.string,
+  Gif: PropTypes.string
+};
+
+export default ImgMediaCard;

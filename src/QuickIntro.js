@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   section: {
@@ -78,5 +79,11 @@ const QuickIntro = ({ classes }) => {
     </Grid>
   );
 };
+
+QuickIntro.propTypes = {
+  classes: PropTypes.object,
+  nowActive: PropTypes.string,
+  fillColor: PropTypes.string
+}
 
 export default withStyles(styles)(QuickIntro);

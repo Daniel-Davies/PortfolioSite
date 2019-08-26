@@ -3,6 +3,7 @@ import Skill from "./Skill";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/styles";
+import PropTypes from 'prop-types';
 import { PLs, frameworks, platforms, dbs } from "./utils/languagesStore";
 
 const styles = theme => ({
@@ -75,6 +76,10 @@ class Languages extends React.Component {
       </Grid>
     );
   }
+}
+
+Languages.propTypes = {
+  classes: PropTypes.object
 }
 
 export default withStyles(styles)(Languages);

@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   buttonWhite: {
@@ -56,5 +57,10 @@ class CardFlag extends React.Component {
     );
   }
 }
+
+CardFlag.propTypes = {
+  classes: PropTypes.string
+}
+
 
 export default withStyles(styles)(CardFlag);

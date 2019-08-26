@@ -1,6 +1,7 @@
 import React from "react";
 import Chip from "@material-ui/core/Chip";
 import { withStyles } from "@material-ui/styles";
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   label: {
@@ -26,6 +27,12 @@ class Skill extends React.Component {
       />
     );
   }
+}
+
+Skill.propTypes = {
+  classes: PropTypes.object,
+  name: PropTypes.string,
+  label: PropTypes.string
 }
 
 export default withStyles(styles)(Skill);

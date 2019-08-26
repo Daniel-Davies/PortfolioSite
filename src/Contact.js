@@ -9,6 +9,7 @@ import Fade from "@material-ui/core/Fade";
 import { withStyles } from "@material-ui/core/styles";
 import { ReCaptcha } from "react-recaptcha-google";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import PropTypes from 'prop-types';
 import Footer from "./Footer";
 import { makePostReqToServer } from "./utils/request.js";
 import {
@@ -386,6 +387,10 @@ class Contact extends React.Component {
       </div>
     );
   }
+}
+
+Contact.propTypes = {
+  classes: PropTypes.object
 }
 
 export default withStyles(styles)(Contact);

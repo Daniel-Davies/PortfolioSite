@@ -6,6 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Grid from "@material-ui/core/Grid";
 import { Tabs, Tab } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   extraPadded: {
@@ -158,5 +159,12 @@ function Navbar({ nowActive, fillColor, classes }) {
     </Grid>
   );
 }
+
+Navbar.propTypes = {
+  classes: PropTypes.object,
+  nowActive: PropTypes.string,
+  fillColor: PropTypes.string
+}
+
 
 export default withStyles(styles)(Navbar);

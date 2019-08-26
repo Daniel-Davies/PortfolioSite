@@ -1,6 +1,7 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   overlapped: {
@@ -34,6 +35,10 @@ class CardFlag extends React.Component {
       </div>
     );
   }
+}
+
+CardFlag.propTypes = {
+  classes: PropTypes.object
 }
 
 export default withStyles(styles)(CardFlag);
