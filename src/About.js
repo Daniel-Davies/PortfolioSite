@@ -76,7 +76,7 @@ function About() {
                 variant="h3"
                 color="inherit"
               >
-                Hello! I'm Daniel, a Masters' student at the University of
+                Hello! I'm Daniel, a Masters student at the University of
                 Bristol.
               </Typography>
             </Grow>

@@ -37,7 +37,7 @@ class CardFlag extends React.Component {
           </Grid>
           <Grid item container justify="center">
             <Typography className={classes.multiline} variant="h6">
-              It's great you want to talk! I will aim to respond in 24 hours.
+              It's great you want to talk! I will aim to respond within 24 hours.
             </Typography>
           </Grid>
           <Grid justify="center" xs={12} item container>

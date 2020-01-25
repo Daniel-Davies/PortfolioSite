@@ -129,7 +129,7 @@ class Contact extends React.Component {
       ).then(
         serverResponse => {
           const response = JSON.parse(serverResponse);
-          if (response.success) {
+          if (response["success"] == true) {
             this.setState({ submittedForm: true });
           } else {
             this.setState({ loadingResp: false });
