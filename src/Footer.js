@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import PropTypes from 'prop-types';
 
 function Footer({ backgroundColor, color }) {
+  var val = (new Date().getFullYear()).toString()
   return (
     <div style={{ flexGrow: 1 }}>
       <AppBar
@@ -16,7 +17,7 @@ function Footer({ backgroundColor, color }) {
         <Toolbar>
           <Grid item container xs={12} justify="center">
             <Typography variant="h6" color="inherit">
-              Daniel Davies 2019
+              Daniel Davies {val}
             </Typography>
           </Grid>
         </Toolbar>
